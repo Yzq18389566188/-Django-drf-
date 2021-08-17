@@ -1,0 +1,82 @@
+
+.containeres{
+  width: 100%;
+  height: 500rpx;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.containeres image{
+  position: absolute;
+  width: 100%;
+  height: 475rpx;
+}
+.container{
+  padding: 40rpx;
+  padding-bottom: 90rpx;
+  padding-left: 600rpx;
+  padding-top: 0rpx;
+
+}
+.containers{
+  width: 20rpx;
+  height: 20rpx; 
+  /* padding-bottom: 700rpx; */
+}
+.avatar{
+  width: 80rpx;
+  height: 80rpx; 
+  border-radius: 50%;
+}
+
+.text{
+  padding-left: 80rpx;
+   /*固定宽度*/
+   width: 650rpx;
+   /*超出部分隐藏*/
+   overflow:hidden;
+   /*不换行*/
+    white-space:nowrap; 
+   /*添加...*/
+   text-overflow:ellipsis;
+}
+
+
+.text1{
+  padding-left: 80rpx;
+  padding-top: 30rpx;
+  color:gray;
+
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+  width: 600rpx;
+  height: 500rpx;
+  padding-left: 80rpx;
+}
+
+
+.chose-image{
+  width: 100rpx;
+  padding: 10rpx 0; 
+  /* border: 1rpx solid #ddd; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.index {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.chose-image image{
+  width: 40rpx;
+  height: 40rpx;
+  color: white;
+}

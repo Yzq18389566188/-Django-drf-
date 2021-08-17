@@ -1,0 +1,38 @@
+/* pages/index/index.wxss */
+
+.main .first{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main .first image{
+  width: 350rpx;
+  height: 350rpx;
+  padding: 10rpx;
+}
+.main .second{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main .second image{
+  width: 350rpx;
+  height: 350rpx;
+  padding: 10rpx;
+}
+.main .third{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main .third image{
+  width: 350rpx;
+  height: 350rpx;
+  padding: 10rpx;
+}
+
+.tag{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 14rpx;
+}

@@ -1,0 +1,42 @@
+<!--pages/index/index.wxml-->
+<view class="main">
+  <van-search v-model="value" placeholder="请输入搜索关键词" />
+  <view class="first">
+    
+    <view>
+      <image src="../../static/cover/child.jpg" bindtap="navigateTo" id="1"></image>
+      <van-tag type="success" color="#ffe1e1" text-color="#ad0000" class="tag">儿童</van-tag>
+      
+    </view>
+    <view>
+      <image src="../../static/cover/senior.jpg" bindtap="navigateTo" id="2"></image>
+      <van-tag type="success" color="#ffe1e1" text-color="#ad0000" class="tag">老年人</van-tag>
+    </view>
+    
+  </view>
+  <view class="second">
+    <view>
+      <image src="../../static/cover/male.jpg" bindtap="navigateTo" id="3"></image>
+      <van-tag type="success" color="#ffe1e1" text-color="#ad0000" class="tag">男性</van-tag>
+    </view>
+    <view>
+      <image src="../../static/cover/female.jpg" bindtap="navigateTo" id="4"></image>
+      <van-tag type="success" color="#ffe1e1" text-color="#ad0000" class="tag">女性</van-tag>
+    </view>
+    
+  </view>
+  <view class="third">
+    <view>
+      <image src="../../static/cover/Common.jpg" bindtap="navigateTo" id="5"></image>
+      <van-tag type="success" color="#ffe1e1" text-color="#ad0000" class="tag">常见疾病</van-tag>
+    </view>
+    <view>
+      <image src="../../static/cover/mental.jpg" bindtap="navigateTo" id="6"></image>
+      <van-tag type="success" color="#ffe1e1" text-color="#ad0000" class="tag">精神疾病</van-tag>
+    </view>
+ 
+  </view>
+  
+
+
+</view>

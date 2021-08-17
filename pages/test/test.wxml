@@ -1,0 +1,21 @@
+<!--pages/test/test.wxml-->
+<!--pages/publish/publish.wxml-->
+<!-- <view bindtap="uploadImage">请上传图片</view>
+<view class="container">
+  <image wx:for="{{imageList}}" wx:key='index' src="{{item}} "></image>
+</view> -->
+
+
+<view bindtap="uploadimage">点击上传</view>
+
+<view class="container">
+  <view class="item" >
+    <image src="/static/icon/camera.png" mode="widthFix"></image>
+    <image src="/static/cover/mental.jpg" mode="widthFix"></image>
+  </view>
+  <view class="item">
+    <image src="/static/cover/child.jpg" mode="widthFix"></image>
+    <image src="/static/cover/Common.jpg" mode="widthFix"></image>
+  </view>
+
+</view>

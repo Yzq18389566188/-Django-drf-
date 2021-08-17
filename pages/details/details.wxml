@@ -1,0 +1,14 @@
+<!--pages/details/details.wxml-->
+<view>
+  <text>{{type}}</text>
+  <van-divider hairline  borderColor="#1989fa"/>
+</view>
+<view class="conter"  >
+
+<view wx:for="{{newlist}}" wx:key='intex'>
+
+  <van-button round type="info" bindtap="navigateTo" data-postid="{{item.id}}"> {{item.illness}} 
+</van-button>
+
+</view>
+</view>

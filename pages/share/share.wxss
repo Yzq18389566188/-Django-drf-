@@ -1,0 +1,12 @@
+/* pages/share/share.wxss */
+
+.context{
+  border:5rpx solid gray;
+}
+
+.context text{
+  padding-left: 10rpx;
+  font-family:Simsun;
+  text-indent: 2em;
+  text-align: center;
+}

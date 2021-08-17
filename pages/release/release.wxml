@@ -1,0 +1,25 @@
+<!--pages/index/index.wxml-->
+<view class="containeres">
+  <image src='../../static/icon/timg.jpg'></image>
+<!-- </view> -->
+<view class="container">
+   <view class="chose-image">
+    <image src="/static/icon/camera1.png" bindtap="Publish"></image>
+    <text >发布</text>
+   </view>
+
+</view>
+</view>
+
+<view class="containers" wx:for="{{newsList}}" wx:key="index" class="foot">
+  <van-divider />
+  <view class='index'>
+    <image class="avatar"  src="{{item.user.avatar}}"></image>
+    <text >{{item.user.nickname}}{{item.id}}</text>
+  </view>
+  <view class="text" >{{item.content}}</view>
+  <navigator url="/pages/newsDetail/newsDetail?newsId={{item.id}}">
+    <image class="images" src="{{item.cover}}"></image>
+  </navigator>
+  <view class="text1" wx:if="{{item.topic}}">话题：#{{item.topic.title}}</view>
+</view>

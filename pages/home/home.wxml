@@ -1,0 +1,97 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class="top-view">
+    <view class="user">
+      <view class="row">
+
+        <image class="avatar" wx:if="{{avatar}}" src="{{avatar}}"></image>
+        <image class="avatar" wx:else="{{!avatar}}" src="../../static/cover/login.png"></image>
+
+        <view class="name" wx:if="{{nickName}}">
+          <view bindtap="onClickLogout">{{nickname}}</view>
+        </view>
+        <view class="name" wx:else="{{!nickName}}">
+          <!-- <navigator url="/pages/auth/auth">登录</navigator>
+          |
+          <navigator url="/pages/auth/auth">注册</navigator> -->
+          <view bindtap="login">登录</view>
+        </view>
+
+
+      </view>
+      <!-- <view class="site">查看个人主页</view> -->
+    </view>
+
+    <view class="numbers">
+      <view class="row">
+        <text>20</text>
+        <text>关注</text>
+      </view>
+      <view class="row">
+        <text>35</text>
+        <text>粉丝</text>
+      </view>
+      <view class="row">
+        <text>750</text>
+        <text>赞与收藏</text>
+      </view>
+      <view class="row">
+        <text>45</text>
+        <text>好友动态</text>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="middle-view">
+    <view class="item">
+      <image src="../../static/icon/payment2.png"></image>
+      <text>待支付</text>
+    </view>
+    <view class="item">
+      <image src="../../static/icon/delivery.png"></image>
+      <text>待发货</text>
+    </view>
+    <view class="item">
+      <image src="../../static/icon/goods.png"></image>
+      <text>待收货</text>
+    </view>
+    <view class="item">
+      <image src="../../static/icon/more.png"></image>
+      <text>更多</text>
+    </view>
+  </view>
+  <view class="function-view">
+    <view class="row">
+      <view class="left">我的钱包</view>
+      <view class="right">
+        <text>¥</text>
+      </view>
+    </view>
+    <view class="row">
+      <view class="left">我的优惠券</view>
+      <view class="right">
+        <text>暂无优惠券</text>
+      </view>
+    </view>
+    <view class="row">
+      <view class="left">领劵中心</view>
+      <view class="right">
+        <text>福利中心</text>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="contact-view">
+    <button open-type="contact">
+      <image src="../../static/icon/more.png"></image>
+    </button>
+    <button bindtap="onClickCall">
+      <image src="../../static/icon/more.png"></image>
+    </button>
+  </view> -->
+</view>
+
+<!-- 
+  <button bindtap="onClickLogin">登录</button>
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfoFunction">获取信息</button>
+ -->
