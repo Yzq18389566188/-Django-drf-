@@ -142,7 +142,7 @@ Page({
           // 上传文件（通过闭包做一个上传文件的操作）
           (function(idx){
             cos.postObject({
-              Bucket: 'diet-1302638185',
+              Bucket: 'diet-',
               Region: 'ap-guangzhou',
               Key: fileKey,
               FilePath: imageFilePath,
